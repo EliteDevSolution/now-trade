@@ -44,16 +44,16 @@ const MobileMenubar = () => {
                 <div className={"px-[5px]"}>
                     <ul className={"mt-[22px] 2xl:mt-[30px]"}>
 
-                        <li className={"mt-[10px] 2xl:mb-3"}>
+                        <li className={"mt-[10px] 2xl:mb-3 mb-3"}>
                             <Link to={route.ROOT_PATH} onClick={expandMenubar} className={"group sideBarNavItem " + (location.pathname === route.ROOT_PATH ? 'bg-lightBlue1 dark:bg-darkBlue1' : 'hover:bg-lightBlue1 dark:hover:bg-darkBlue1')}>
                                 <DashboardIcon fill={"fill-black dark:fill-white " + (location.pathname === route.ROOT_PATH ? 'fill-lightBlue2 dark:fill-darkBlue2' : 'group-hover:fill-lightBlue2 dark:group-hover:fill-darkBlue2')}/>
                                 {isMenuOpen ? <span className={"dark:text-white pl-[30px] pr-[50px] sm:flex hidden" + (location.pathname === route.ROOT_PATH ? 'text-lightBlue2 dark:text-darkBlue2' : 'group-hover:text-lightBlue2 dark:group-hover:text-darkBlue2')}>Dashboard</span> : null}
                             </Link>
                         </li>
                         <li className={"mb-[10px] 2xl:mb-3"}>
-                            <Link to={route.CHALLENGE_PATH} onClick={expandMenubar} className={"group sideBarNavItem " + (location.pathname === route.MARKET_PATH ? 'bg-lightBlue1 dark:bg-darkBlue1' : 'hover:bg-lightBlue1 dark:hover:bg-darkBlue1')}>
-                                <MarketsIcon fill={"fill-black dark:fill-white " + (location.pathname === route.MARKET_PATH ? 'fill-lightBlue2 dark:fill-darkBlue2' : 'group-hover:fill-lightBlue2 dark:group-hover:fill-darkBlue2')}/>
-                                {isMenuOpen ? <span className={"dark:text-white pl-[30px] pr-[50px] sm:flex hidden" + (location.pathname === route.MARKET_PATH ? 'text-lightBlue2 dark:text-darkBlue2' : 'group-hover:text-lightBlue2 dark:group-hover:text-darkBlue2')}>Challenges</span> : null}
+                            <Link to={route.CHALLENGE_PATH} onClick={expandMenubar} className={"group sideBarNavItem " + (location.pathname === route.CHALLENGE_PATH ? 'bg-lightBlue1 dark:bg-darkBlue1' : 'hover:bg-lightBlue1 dark:hover:bg-darkBlue1')}>
+                                <MarketsIcon fill={"fill-black dark:fill-white " + (location.pathname === route.CHALLENGE_PATH ? 'fill-lightBlue2 dark:fill-darkBlue2' : 'group-hover:fill-lightBlue2 dark:group-hover:fill-darkBlue2')}/>
+                                {isMenuOpen ? <span className={"dark:text-white pl-[30px] pr-[50px] sm:flex hidden" + (location.pathname === route.CHALLENGE_PATH ? 'text-lightBlue2 dark:text-darkBlue2' : 'group-hover:text-lightBlue2 dark:group-hover:text-darkBlue2')}>Challenges</span> : null}
                             </Link>
                         </li>
                         <li className={"mb-[10px] 2xl:mb-3"}>

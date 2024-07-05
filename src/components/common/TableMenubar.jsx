@@ -100,7 +100,7 @@ const TableMenubar = () => {
                 to={route.CHALLENGE_PATH}
                 className={
                   "group sideBarNavItem " +
-                  (location.pathname === route.MARKET_PATH
+                  (location.pathname === route.CHALLENGE_PATH
                     ? "bg-lightBlue1 dark:bg-darkBlue1"
                     : "hover:bg-lightBlue1 dark:hover:bg-darkBlue1")
                 }
@@ -108,7 +108,7 @@ const TableMenubar = () => {
                 <MarketsIcon
                   fill={
                     "fill-black dark:fill-white " +
-                    (location.pathname === route.MARKET_PATH
+                    (location.pathname === route.CHALLENGE_PATH
                       ? "fill-lightBlue2 dark:fill-darkBlue2"
                       : "group-hover:fill-lightBlue2 dark:group-hover:fill-darkBlue2")
                   }
@@ -117,7 +117,7 @@ const TableMenubar = () => {
                   <span
                     className={
                       "dark:text-white pl-[30px] pr-[50px] sm:flex hidden" +
-                      (location.pathname === route.MARKET_PATH
+                      (location.pathname === route.CHALLENGE_PATH
                         ? "text-lightBlue2 dark:text-darkBlue2"
                         : "group-hover:text-lightBlue2 dark:group-hover:text-darkBlue2")
                     }
