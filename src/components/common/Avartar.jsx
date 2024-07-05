@@ -46,7 +46,7 @@ const Avatar = () => {
                     <Menu.Item>
                         {({ active }) => (
                             <Link to={route.PROFILE_PATH}>
-                                <div className="px-4 py-3 text-sm dark:text-white">
+                                <div className="px-4 py-3 text-sm dark:text-black">
                                         Profile Setting
                                 </div>
                             </Link>
@@ -55,7 +55,7 @@ const Avatar = () => {
                     <Menu.Item>
                         {({ active }) => (
                             <Link onClick={logoutHandler}>
-                                <div className="px-4 py-3 text-sm dark:text-white ">
+                                <div className="px-4 py-3 text-sm dark:text-black ">
                                         Sign Out
                                 </div>
                             </Link>

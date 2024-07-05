@@ -35,7 +35,7 @@ export default function DropDown({childrens}) {
               <Menu.Item key={`menu_${index}`} className="">
                 {({ active }) => (
 
-                    <div className="px-4 py-3 text-sm dark:text-white ">
+                    <div className="px-4 py-3 text-sm dark:text-black">
                         <div>Account 80876399</div>
                         <div className="font-medium truncate">name@flowbite.com</div>
                     </div>
