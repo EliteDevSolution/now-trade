@@ -5,7 +5,7 @@ import { useRegisterMutation } from '../slices/usersApiSlice';
 import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify';
 
-import LOGO from "../assets/images/big_dark_logo.jpg";
+import LOGO from "../assets/images/logo-dark.png";
 
 const Register = () => {
     const [name, setName] = useState('');
