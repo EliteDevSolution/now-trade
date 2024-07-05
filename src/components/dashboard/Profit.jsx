@@ -1,15 +1,47 @@
+import {Flat, Heat, Nested} from '@alptugidin/react-circular-progress-bar'
+
+import 'react-circular-progressbar/dist/styles.css';
+
+
+
 const Profit = () => {
+
+
   return (
-    <div className={"flex sm:flex-col flex-row h-full min-w-[300px]"}>
-      <div className={"sm:mb-[18px] flex justify-between items-center gap-x-3"}>
-        <h1 className={"cardTitle"}>Profit</h1>
+    <>
+      <div className={"sm:mb-[18px] flex sm:mx-6 justify-between items-center gap-x-3"}>
+        <span className={"cardTitle"}>Profit</span>
+        <span className={"cardTitle"}>8000$</span>
       </div>
-      <div className="m-auto sm:pb-16">
-        <p className={"dark:text-white text-base font-semibold sm:text-[45px]"}>
-          $456.00
-        </p>
+      <div className={"flex sm:flex-col pt-5 flex-row min-w-[300px] sm:items-center justify-center"}>
+        <div className="max-w-[200px] min-w-[200px] z-20">
+          <Flat
+            progress={100}
+            range={{ from: 0, to: 100 }}
+            sign={{ value: '%', position: 'end' }}
+            text={'8000$'}
+            showMiniCircle={false}
+            showValue={false}
+            sx={{
+              strokeColor: 'blue',
+              barWidth: 7,
+              bgStrokeColor: '#ffffff',
+              bgColor: { value: '#000000', transparency: '20' },
+              shape: 'full',
+              strokeLinecap: 'round',
+              valueFamily: 'Trebuchet MS',
+              textSize: 17,
+              textWeight: 'bold',
+              textColor: 'white',
+              textFamily: 'Trebuchet MS',
+              loadingTime: 1000,
+              valueAnimation: true,
+              intersectionEnabled: true
+            }}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
