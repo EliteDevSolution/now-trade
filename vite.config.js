@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://now-trade.vercel.app',
+        target: 'https://now-trade-api.vercel.app',
         changeOrigin: true
       }
     }
