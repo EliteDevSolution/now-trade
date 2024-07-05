@@ -42,7 +42,7 @@ const Login = () => {
             </div>
         <div className="md:w-1/3 max-w-sm">
                 <div className='flex justify-center pb-3'>
-                  <img src={LOGO} alt="" className={'block border border-gray-200 w-[140px]'} />
+                  <img src={LOGO} alt="" className={'block  border border-gray-100 w-[140px]'} />
                 </div>
                 <div className="text-center md:text-left">
                     <label className="mr-1">Sign in</label>
