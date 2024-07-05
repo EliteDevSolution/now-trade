@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useLogoutMutation } from "../../slices/usersApiSlice.js";
 
 import { logout } from "../../slices/authSlice.js";
-import { setOpenMenu } from "../../slices/menuSlice.js";
+import { handleMobileMenu, setOpenMenu } from "../../slices/menuSlice.js";
 
 import * as route from "../../routes/Slugs.jsx";
 import DashboardIcon from "../svg/DashboardIcon.jsx";
@@ -16,6 +16,7 @@ import SettingsIcon from "../svg/SettingsIcon.jsx";
 import LogoutIcon from "../svg/LogoutIcon.jsx";
 import ChevronleftIcon from "../svg/ChevronleftIcon.jsx";
 import ChevronrightIcon from "../svg/ChevronrightIcon.jsx";
+import { useEffect } from "react";
 
 const TableMenubar = () => {
   let location = useLocation();
@@ -40,6 +41,9 @@ const TableMenubar = () => {
   const handleMenubar = () => {
     dispatch(setOpenMenu(!isMenuOpen));
   };
+
+  useEffect(() => {
+  });
 
   return (
    <div className = { 'sm:block hidden' }>

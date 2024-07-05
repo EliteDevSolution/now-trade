@@ -40,7 +40,10 @@ const MobileMenubar = () => {
     }
 
     return isMobileMenu ?
-            <div className = { 'sm:hidden flex' }>
+        <>
+            <div className="fixed h-full bg-transparent right-0 w-[calc(100%-224px)] block sm:hidden" onClick={expandMenubar}>
+            </div>
+            <div className={'sm:hidden flex'}>
                 <div className={"px-[5px]"}>
                     <ul className={"mt-[22px] 2xl:mt-[30px]"}>
 
@@ -83,7 +86,8 @@ const MobileMenubar = () => {
                     </ul>
                 </div>
             </div>
-        : null
+        </>
+    : null
 };
 
 export default MobileMenubar;
