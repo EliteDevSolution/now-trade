@@ -49,7 +49,7 @@
     @apply border-0 border-b-[0.4px] last:border-b-0 border-lightAsh5 dark:border-darkAsh5
 }
 .tableData{
-    @apply align-middle whitespace-nowrap py-4 text-[10px] 2xl:text-xs
+    @apply align-middle whitespace-nowrap py-4 text-[15px]
 }
 
 .converterBody{

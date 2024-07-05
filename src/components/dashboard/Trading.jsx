@@ -16,11 +16,11 @@ const Trading = () => {
                             Maxim daily drawdown
                         </td>
                         <td className={'tableData w-2/3 dark:text-white'}>
-                            <p className="dark:text-white font-semibold">
+                            <p className="dark:text-white font-bold text-[13px]">
                                 $0.00 / $10,022.80(12 hours, 1 minute beafore reset)
                             </p>
                             <div className="w-full mt-1 bg-gray-200 rounded-full h-2 mb-4 dark:bg-gray-700">
-                                <div className="bg-blue-600 h-2 rounded-full dark:bg-blue-500 w-1/3" />
+                                <div className="bg-blue-600 h-2 rounded-full font-bold text-[13px] dark:bg-blue-500 w-1/3" />
                             </div>
                         </td>
                     </tr>
@@ -29,7 +29,7 @@ const Trading = () => {
                             Maxim lifetime drawdown
                         </td>
                         <td className={'tableData w-2/3 dark:text-white'}>
-                            <p className="dark:text-white font-semibold">
+                            <p className="dark:text-white font-bold text-[13px]">
                                 $960.00 / $10,022.80
                             </p>
                             <div className="w-full mt-1 bg-gray-200 rounded-full h-2 mb-4 dark:bg-gray-700">

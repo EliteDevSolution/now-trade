@@ -29,7 +29,7 @@ const Profile = () => {
 					<Detail/>
 				</div>
 
-				<div className={'dashboardCard w-full flex justify-between p-6 mt-5 items-center'}>
+				<div className={'dashboardCard w-full p-6 mt-5 items-center'}>
 					<ChangePassword/>
 				</div>
 			</div>

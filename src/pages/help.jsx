@@ -28,7 +28,7 @@ const Help = () => {
                     </p>
                     <button
                         type="button"
-                        className="inlineBlock border-2 border-gray px-6 pb-[6px] pt-2 sm:text-xs text-[11px] font-medium uppercase leading-normal text-warning transition duration-150 ease-in-out motion-reduce:transition-none dark:text-white rounded-xl mt-4 w-full sm:w-auo"
+                        className="inlineBlock border-2 border-gray px-6 pb-[6px] pt-2 sm:text-xs text-[11px] font-medium uppercase leading-normal text-warning transition duration-150 ease-in-out motion-reduce:transition-none dark:text-white rounded-xl mt-4 w-full sm:w-auto"
                         data-twe-ripple-init>
                         CONTACT SUPPORT
                     </button>
