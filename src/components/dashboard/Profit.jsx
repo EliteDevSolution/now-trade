@@ -13,8 +13,8 @@ const Profit = () => {
         <span className={"cardTitle"}>Profit</span>
         <span className={"cardTitle"}>8000$</span>
       </div>
-      <div className={"flex sm:flex-col pt-5 flex-row min-w-[300px] sm:items-center justify-center"}>
-        <div className="max-w-[200px] min-w-[200px] z-20">
+      <div className={"flex sm:flex-col py-5 flex-row sm:items-center justify-center"}>
+        <div className="max-w-[200px] min-w-[200px] z-20 hidden dark:block">
           <Flat
             progress={100}
             range={{ from: 0, to: 100 }}
@@ -33,6 +33,31 @@ const Profit = () => {
               textSize: 17,
               textWeight: 'bold',
               textColor: 'white',
+              textFamily: 'Trebuchet MS',
+              loadingTime: 1000,
+              valueAnimation: true,
+              intersectionEnabled: true
+            }}
+          />
+        </div>
+        <div className="max-w-[200px] min-w-[200px] z-20 dark:hidden">
+          <Flat
+            progress={100}
+            range={{ from: 0, to: 100 }}
+            sign={{ value: '%', position: 'end' }}
+            text={'8000$'}
+            showMiniCircle={false}
+            showValue={false}
+            sx={{
+              strokeColor: 'blue',
+              barWidth: 7,
+              bgStrokeColor: '#ffffff',
+              shape: 'full',
+              strokeLinecap: 'round',
+              valueFamily: 'Trebuchet MS',
+              textSize: 17,
+              textWeight: 'bold',
+              textColor: 'black',
               textFamily: 'Trebuchet MS',
               loadingTime: 1000,
               valueAnimation: true,
