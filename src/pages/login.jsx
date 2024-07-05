@@ -5,6 +5,8 @@ import { useLoginMutation } from '../slices/usersApiSlice';
 import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify';
 
+import LOGO from "../assets/images/big_dark_logo.jpg";
+
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -38,7 +40,10 @@ const Login = () => {
             <div className="md:w-1/3 max-w-sm">
                 <img src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" alt="Sample image" />
             </div>
-            <div className="md:w-1/3 max-w-sm">
+        <div className="md:w-1/3 max-w-sm">
+                <div className='flex justify-center pb-3'>
+                  <img src={LOGO} alt="" className={'block border border-gray-200 w-[140px]'} />
+                </div>
                 <div className="text-center md:text-left">
                     <label className="mr-1">Sign in</label>
                 </div>
