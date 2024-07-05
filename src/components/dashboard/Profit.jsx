@@ -1,12 +1,6 @@
-import {Flat, Heat, Nested} from '@alptugidin/react-circular-progress-bar'
-
-import 'react-circular-progressbar/dist/styles.css';
-
-
+import { Flat } from '@alptugidin/react-circular-progress-bar'
 
 const Profit = () => {
-
-
   return (
     <>
       <div className={"sm:mb-[18px] flex sm:mx-6 justify-between items-center gap-x-3"}>
